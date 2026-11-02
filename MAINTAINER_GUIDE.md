@@ -75,8 +75,9 @@ Running `ReelsDL.ps1` with no mode prints usage and exits 1.
 ## 2. Project Directory Structure
 
 ```
-C:\Users\<user>\Desktop\ReelsDL\
+ReelsDL\
 ├── .gitignore
+├── LICENSE                       # MIT
 ├── README.md
 ├── MAINTAINER_GUIDE.md
 ├── build.ps1                     # Compiles, self-tests, and packages
@@ -92,7 +93,10 @@ C:\Users\<user>\Desktop\ReelsDL\
 │   └── installer\
 │       ├── Setup.cs              # Fluent per-user installer
 │       └── Uninstall.cs          # Fluent uninstaller
+├── docs\
+│   └── screenshots\              # README screenshot (generated)
 ├── tests\
+│   ├── Capture-Screenshots.ps1   # Rebuilds the README screenshot
 │   └── Test-CookieProbe.ps1      # Read-only cookie DB diagnostic
 ├── build\                        # Staging directory (generated)
 └── dist\
@@ -270,6 +274,7 @@ Useful checks:
 powershell -NoProfile -ExecutionPolicy Bypass -File .\src\ReelsDL.ps1 -SelfTest
 powershell -NoProfile -ExecutionPolicy Bypass -File .\src\ReelsDL.ps1 -CookieState
 powershell -NoProfile -ExecutionPolicy Bypass -File .\tests\Test-CookieProbe.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File .\tests\Capture-Screenshots.ps1
 ```
 
 `tests\Test-CookieProbe.ps1` reads the local profile database and prints cookie

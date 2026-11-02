@@ -4,6 +4,20 @@ Fast, standalone Windows desktop application to download videos and photos from 
 
 Powered by browser-native automation (Chrome DevTools Protocol), **ReelsDL reuses your own browser session**, so posts that are visible after logging in can be downloaded without extracting passwords or API tokens.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Platform: Windows 10/11](https://img.shields.io/badge/platform-Windows%2010%2F11-blue)](#installation)
+[![Version: 2.2.0](https://img.shields.io/badge/version-2.2.0-green)](https://github.com/JasonMMIV/ReelsDL/releases)
+
+---
+
+## Screenshot
+
+<p align="center">
+  <img src="docs/screenshots/main-window.png" alt="ReelsDL main window" width="860">
+</p>
+
+<p align="center"><em>Paste a link, choose a destination, and download the best progressive video or photo.</em></p>
+
 ---
 
 ## Supported Platforms
@@ -101,6 +115,12 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\src\ReelsDL.ps1 `
 
 Exit codes: `0` success, `1` error, `2` login window closed without a session,
 `3` login required (`-Cli` only). Run with `-Help` for the full usage text.
+
+---
+
+## License
+
+Released under the [MIT License](LICENSE). ReelsDL is an independent project and is not affiliated with Meta, X, TikTok, or Google.
 
 ---
 
