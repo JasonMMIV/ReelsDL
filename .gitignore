@@ -1,0 +1,10 @@
+# Build artifacts
+build/
+dist/
+bin/
+obj/
+*.log
+
+# Windows desktop artifacts
+Thumbs.db
+Desktop.ini
